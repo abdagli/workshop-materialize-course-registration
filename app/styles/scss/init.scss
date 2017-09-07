@@ -1,0 +1,39 @@
+.uzm-course-card {
+	.card-image {
+		img {
+			filter: grayscale(75%) brightness(100%);
+		}
+	}
+
+	.uzm-course-price {
+		display: block;
+		font-size: 30px;
+		font-weight: 300;
+		margin: 20px;
+	}
+
+	.uzm-course-features {
+		margin-top: 30px;
+	}
+}
+
+.uzm-course-payment {
+	& > .col {
+		padding: 0;
+
+		& > .card {
+			margin: 0;
+		}
+	}
+
+	.uzm-course-price {
+		display: block;
+		font-size: 30px;
+		font-weight: 300;
+		margin: 20px;
+	}
+
+	.collection, .collection-item {
+		border-color: #4fc3f7;
+	}
+}
