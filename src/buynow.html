@@ -1,0 +1,81 @@
+@@include('./parts/globals/head.html')
+@@include('./parts/components/navbar.html')
+@@include('./parts/components/sidenav.html')
+
+	<div class="container">
+		@@include('./parts/components/hero.html')
+
+		<div class="row uzm-course-payment z-depth-1 cyan">
+			<div class="col s12 m12 l6">
+				<div class="card z-depth-0 valign-wrapper">
+					<div class="card-content">
+						<span class="card-title">Satın Al</span>
+						<p>Tebrikler! "Fotoğrafçılık Kursu" için başvuru yapıyorsunuz. Kurs detaylarına ulaşmak, sizinle irtibata geçebilmek için lütfen telefon numaranızı doğru giriniz. Bu telefon numarası bilgisi ile sisteme erişim sağlayacağınızı unutmayınız.<br /><br /></p>
+
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="fullname" type="text" class="validate">
+								<label for="fullname">Telefon Numaranız</label>
+							</div>
+
+							<div class="col s12">
+								<br /><br /><br />Kurs ücreti ödemesi için lütfen kredi kartı bilgilerinizi doğru ve eksiksiz olarak giriniz. Ödeme işlemi yapmadan önce Gizlilik Sözleşmesi'ni ve Mesafeli Satış Sözleşmesi'ni okumayı unutmayınız.<br /><br />
+							</div>
+
+							<div class="input-field col s12">
+								<input id="fullname" type="text" class="validate">
+								<label for="fullname">Kart üzerindeki ad soyad</label>
+							</div>
+
+							<div class="input-field col s12">
+								<input id="cardnumber" type="text" class="validate">
+								<label for="cardnumber">Kart numarası</label>
+							</div>
+
+							<div class="input-field col s6">
+								<input id="cvc" type="text" class="validate">
+								<label for="cvc">AY</label>
+							</div>
+
+							<div class="input-field col s3">
+								<input id="cvc" type="text" class="validate">
+								<label for="cvc">YIL</label>
+							</div>
+
+							<div class="input-field col s3">
+								<input id="cvc" type="text" class="validate">
+								<label for="cvc">CVC</label>
+							</div>
+						</div>
+
+						<div class="center">
+							<span class="uzm-course-price">₺750,00</span>
+							@@include('./parts/components/buynow-button.html')
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col s12 m12 l6 cyan-text text-lighten-5">
+				<div class="card transparent uzm-course-card z-depth-0">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="http://lorempixel.com/500/250/">
+					</div>
+
+					<div class="card-content">
+						<span class="card-title">Fotoğrafçılık Kursu</span>
+						<p>Vestibulum laoreet nunc at turpis egestas tincidunt. Integer pulvinar bibendum nisl egestas fringilla. Nunc maximus dolor lacus, sit amet suscipit leo viverra sit amet.</p>
+
+						<ul class="collection">
+							<li class="collection-item transparent"><i class="material-icons left">chevron_right</i> Morbi vel molestie nisi</li>
+							<li class="collection-item transparent"><i class="material-icons left">chevron_right</i> Vestibulum laoreet nunc at turpis egestas tincidunt</li>
+							<li class="collection-item transparent"><i class="material-icons left">chevron_right</i> Aenean fringilla mi vel leo sodales</li>
+							<li class="collection-item transparent"><i class="material-icons left">chevron_right</i> Pellentesque id risus imperdiet</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include('./parts/globals/foot.html')
