@@ -67,3 +67,23 @@
 		border-color: #4fc3f7;
 	}
 }
+
+.uzm-categories-menu {
+	.col {
+		a {
+			display: block;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 20px;
+
+			i {
+				font-size: 50px;
+				line-height: 50px;
+				display: block;
+				text-align: center;
+				margin: auto;
+			}
+		}
+	}
+	
+}
