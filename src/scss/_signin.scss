@@ -1,0 +1,13 @@
+.uzm-signin {
+	& > .col {
+		padding: 0;
+
+		& > .card {
+			margin: 0;
+		}
+	}
+
+	.collection, .collection-item {
+		border-color: #4fc3f7;
+	}
+}

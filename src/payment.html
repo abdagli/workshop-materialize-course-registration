@@ -1,0 +1,65 @@
+@@include('./parts/globals/head.html')
+@@include('./parts/components/navbar.html')
+@@include('./parts/components/sidenav.html')
+
+<div class="container">
+	@@include('./parts/components/hero.html')
+
+	<div class="row uzm-payment z-depth-1 cyan">
+		<div class="col s12 m12 l6">
+			<div class="card z-depth-0 valign-wrapper">
+				<div class="card-content">
+					<span class="card-title">Satın Al</span>
+					<p>Tebrikler! "Fotoğrafçılık Kursu" için başvuru yapıyorsunuz. Kurs detaylarına ulaşmak, sizinle irtibata geçebilmek için lütfen telefon numaranızı doğru giriniz. Bu telefon numarası bilgisi ile sisteme erişim sağlayacağınızı unutmayınız.<br /><br /></p>
+
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="phoneNumber" type="tel" class="validate" value="+90">
+							<label for="phoneNumber">Telefon Numaranız</label>
+						</div>
+
+						<div class="col s12">
+							<br /><br /><br />Kurs ücreti ödemesi için lütfen kredi kartı bilgilerinizi doğru ve eksiksiz olarak giriniz. Ödeme işlemi yapmadan önce Gizlilik Sözleşmesi'ni ve Mesafeli Satış Sözleşmesi'ni okumayı unutmayınız.<br /><br />
+						</div>
+
+						<div class="input-field col s12">
+							<input id="fullname" type="text" class="validate">
+							<label for="fullname">Kart üzerindeki ad soyad</label>
+						</div>
+
+						<div class="input-field col s12">
+							<input id="cardnumber" type="text" class="validate">
+							<label for="cardnumber">Kart numarası</label>
+						</div>
+
+						<div class="input-field col s6">
+							<input id="cvc" type="text" class="validate">
+							<label for="cvc">CVC</label>
+						</div>
+
+						<div class="input-field col s3">
+							<input id="cardMonth" type="number" max="12" min="1" class="validate">
+							<label for="cardMonth">Ay</label>
+						</div>
+
+						<div class="input-field col s3">
+							<input id="cardYear" type="text" class="validate">
+							<label for="cardYear">Yıl</label>
+						</div>
+					</div>
+
+					<div class="center">
+						<span class="uzm-price">₺750,00</span>
+						@@include('./parts/components/buynow-button.html')
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m12 l6 cyan-text text-lighten-5">
+			@@include('./parts/components/course-card-2.html')
+		</div>
+	</div>
+</div>
+
+@@include('./parts/globals/foot.html')

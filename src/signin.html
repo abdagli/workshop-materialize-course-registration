@@ -1,0 +1,35 @@
+@@include('./parts/globals/head.html')
+@@include('./parts/components/navbar.html')
+@@include('./parts/components/sidenav.html')
+
+<div class="container">
+	@@include('./parts/components/hero.html')
+
+	<div class="row uzm-signin z-depth-1 cyan">
+		<div class="col s12 m12 l6">
+			<div class="card z-depth-0 valign-wrapper">
+				<div class="card-content">
+					<span class="card-title">Giriş Yap</span>
+					<p>Tebrikler! "Fotoğrafçılık Kursu" için başvuru yapıyorsunuz. Kurs detaylarına ulaşmak, sizinle irtibata geçebilmek için lütfen telefon numaranızı doğru giriniz. Bu telefon numarası bilgisi ile sisteme erişim sağlayacağınızı unutmayınız.<br /><br /></p>
+
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="phoneNumber" type="text" class="validate">
+							<label for="phoneNumber">Telefon Numaranız</label>
+						</div>
+					</div>
+
+					<div class="center">
+						<a href="signin-verification.html" class="btn-flat waves-effect waves-light cyan center-align cyan-text text-lighten-5">ŞİFRE GÖNDER <i class="material-icons right">textsms</i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m12 l6 cyan-text text-lighten-5">
+			@@include('./parts/components/auth-card.html')
+		</div>
+	</div>
+</div>
+
+@@include('./parts/globals/foot.html')

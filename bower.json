@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "matchHeight": "matchheight#^0.7.2"
+    "matchHeight": "matchheight#^0.7.2",
+    "inputmask": "^3.3.8"
   }
 }
